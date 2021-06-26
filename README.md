@@ -1,5 +1,5 @@
 # feel-the-tweet
-This is the repo for our HackEng 2021 Submission.
+This is the repo for our EngHack 2021 Submission.
 
 # Authors
 1. Jonathan Li

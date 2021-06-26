@@ -1,5 +1,5 @@
-# feel-the-tweet
-This is the repo for our EngHack 2021 Submission.
+# Feel-the-Tweet
+<em>Feel the Tweet</em> is our app idea for the EngHack 2021 Hackathon Submission.
 
 # Authors
 1. Jonathan Li

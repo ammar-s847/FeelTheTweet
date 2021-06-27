@@ -1,4 +1,5 @@
 import './App.css';
+import './Grid.js';
 
 function App() {
   return (

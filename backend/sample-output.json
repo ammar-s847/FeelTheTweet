@@ -1,27 +1,32 @@
 {
+    "status":"200",
     "data":[
         {
+            "keyword":"word1",
             "score":-0.32,
             "score-name":"Negative",
-            "tweets":12,
+            "quantity":12,
             "since":"2021-05-12"
         },
         {
+            "keyword":"word2",
             "score":0.32,
             "score-name":"Positive",
-            "tweets":42,
+            "quantity":42,
             "since":"2021-05-12"
         },
         {
+            "keyword":"word3",
             "score":-0.70,
             "score-name":"Very Negative",
-            "tweets":62,
+            "quantity":62,
             "since":"2021-05-12"
         },
         {
+            "keyword":"word4",
             "score":-0.04,
             "score-name":"Neutral",
-            "tweets":19,
+            "quantity":19,
             "since":"2021-05-12"
         }
     ]

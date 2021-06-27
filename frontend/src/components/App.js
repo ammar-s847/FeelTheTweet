@@ -1,45 +1,36 @@
-import './App.css';
+import "./App.css";
 
-function Header() {
-    return (
-        <header>
-            <h1>Feel the Tweet</h1>
-        </header>
-    );
+function Header(props) {
+  console.log(props);
+  return (
+    <header>
+      <h1>Feel The Tweet</h1>
+    </header>
+  );
 }
 
-let words = [
-    "Item 1",
-    "Item 2",
-    "Item 3"
-];
-
-function Main() {
-    return (
-        <>
-            <p>Welcome to the Website named {props.name}</p>
-            <ul style={{textAlign: "left"}}>
-                {words.products.map((item) => 
-                    <li key={item.id}>{item.name}</li>
-                )}
-            </ul>
-            <img src={sampleImage} alt="Alternative Text"/>
-            <footer> 
-                <p>{props.year}</p>
-            </footer>
-            <StateExample1 />
-        </>
-    );
+function Main(props) {
+  return (
+    <section>
+      <p>We analyze the sentiment of your favourite keywords on Twitter.</p>
+    </section>
+  );
 }
 
-function App() {
-    return (
-      <div className="App">
-          <Header />
-          <Main name="Website Name" year={new Date().getFullYear()} products={productsObject}/>
-          {props.admin == true ? <p>This is for admins only</p> : null}
-      </div>
-    );
+function MainItem(props) {}
+
+function Form(props) {
+  return <div></div>;
+}
+
+function App(props) {
+  return (
+    <div className="App">
+      <Header />
+      <Main />
+      <Form />
+    </div>
+  );
 }
 
 export default App;

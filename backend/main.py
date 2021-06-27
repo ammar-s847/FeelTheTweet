@@ -21,7 +21,7 @@ def obtain_tweets():
 
 def add_new(input):
     score = find_score(input)
-    scores.insert_one({"keyword":"input", "score name":score})
+    scores.insert_one({"keyword":"input", "score-name":score})
 
 def remove_record(input):
     #tweets.delete_many({"keyword":input})

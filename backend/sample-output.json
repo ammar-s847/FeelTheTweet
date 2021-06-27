@@ -1,26 +1,28 @@
 {
-    "word1":{
-        "score":-0.32,
-        "score-name":"Negative",
-        "tweets":12,
-        "since":"2021-05-12"
-    },
-    "#word2":{
-        "score":0.32,
-        "score-name":"Positive",
-        "tweets":42,
-        "since":"2021-05-12"
-    },
-    "@word3":{
-        "score":-0.70,
-        "score-name":"Very Negative",
-        "tweets":62,
-        "since":"2021-05-12"
-    },
-    "word4":{
-        "score":-0.04,
-        "score-name":"Neutral",
-        "tweets":19,
-        "since":"2021-05-12"
-    }
+    "data":[
+        {
+            "score":-0.32,
+            "score-name":"Negative",
+            "tweets":12,
+            "since":"2021-05-12"
+        },
+        {
+            "score":0.32,
+            "score-name":"Positive",
+            "tweets":42,
+            "since":"2021-05-12"
+        },
+        {
+            "score":-0.70,
+            "score-name":"Very Negative",
+            "tweets":62,
+            "since":"2021-05-12"
+        },
+        {
+            "score":-0.04,
+            "score-name":"Neutral",
+            "tweets":19,
+            "since":"2021-05-12"
+        }
+    ]
 }

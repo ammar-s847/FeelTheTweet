@@ -3,11 +3,13 @@ import tweepy as tw
 from pymongo import MongoClient
 from flask import Flask
 from flask_restful import Api, Resource
+from flask_cors import CORS
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from config import MONGO_CONNECT, TW_API_KEY, TW_API_SECRET, TW_ACCESS_TOKEN, TW_TOKEN_SECRET
 
 app = Flask(__name__)
 api = Api(app)
+CORS(app)
 
 # PyMongo Setup --------------------------------------------------------------------
 mongo = MongoClient(MONGO_CONNECT)

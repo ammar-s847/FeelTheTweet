@@ -1,0 +1,7 @@
+.MainItem {
+    display: block;
+}
+
+.MainItem * {
+    display: inline-block;
+}

@@ -1,7 +1,14 @@
 .MainItem {
     display: block;
+    max-width: 50%;
+    margin: 5px auto;
 }
 
-.MainItem * {
+.MainItem div {
     display: inline-block;
+    text-align: left;
+    padding: 0px 15px;
+    border-radius: 15px;
+    position: relative;
+    margin: auto 5px;
 }

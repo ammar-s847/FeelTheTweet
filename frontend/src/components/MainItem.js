@@ -7,27 +7,30 @@ function MainItem(props) {
     useEffect(() => { 
         switch (props.score_name) {
             case "Very Positive":
-                setScoreColor("green") 
+                setScoreColor("green");
                 break;
             case "Positive":
-                setScoreColor("green") 
+                setScoreColor("green");
                 break;
             case "Very Negative":
-                setScoreColor("red") 
+                setScoreColor("red");
                 break;
             case "Negative":
-                setScoreColor("red") 
+                setScoreColor("red");
                 break;
             default:
-                setScoreColor("blue") 
+                setScoreColor("blue");
         }
     }, []);
     
     return (
         <div className="MainItem">
-            <h2>{props.keyword}</h2>
-            <p>{props.score} {props.score_name} {props.since} {props.quantity}</p>
-            <b style={{color: scoreColor}}>{props.score_name}</b>
+            <div style={{border: "2px solid black"}}>
+                <h2>{props.keyword}</h2>
+            </div>
+            <div>
+                <p><b style={{color: scoreColor, fontSize: 20}}>{props.score_name}</b> | {props.quantity} tweets since {props.since}</p>
+            </div>
         </div>
     ); 
     // <p>{props.keyword} {props.score} {props.score_name} {props.since} {props.quantity}</p>

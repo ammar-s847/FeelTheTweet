@@ -1,3 +1,4 @@
 config.py
 .DS_Store
 test.py
+node_modules

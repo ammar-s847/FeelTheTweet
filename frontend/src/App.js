@@ -1,6 +1,8 @@
 import "./App.css";
 import MainItem from "./components/MainItem";
 import {useState, useEffect} from "react";
+import {useSelector, useDispatch} from "react-redux";
+import {updateList} from "./redux/keywords-state";
 import axios from "axios";
 
 const API_url = "http://127.0.0.1:5000";
@@ -14,16 +16,18 @@ function Header() {
 }
 
 function Main() {
-    const [data, setData] = useState();
+    const { data } = useSelector((state) => state.keywords.data);
+    const dispatch = useDispatch();
     
     const apiRequest = async () => {
         const response = await axios.get(API_url + "/all");
-        setData(response.data);
+        dispatch(updateList(response["data"]));
+        //if (response) { console.log("success") }
     };
 
     useEffect(() => { apiRequest() }, []);
 
-    console.log(data);
+    //if (data) { console.log(data) }
 
     const [formData, setFormData] = useState();
 
@@ -33,22 +37,23 @@ function Main() {
     
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(formData);
+        //console.log(formData);
         const addRequest = async () => {
             const response = await axios.get(API_url + `/add/${formData['keyword-input']}/${formData['since-input']}/${formData['quantity-input']}`);
-            console.log(response);
+            //console.log(response);
+            apiRequest();
         };
 
         addRequest();
     };
 
-    if(!data){
+    if(!data || data === {}) {
         return <p>Loading...</p>;
     } else {
         return (
             <>
                 <p>Keywords:</p>
-                {data['data'].map(item => {
+                {data.map(item => {
                     return (
                         <MainItem 
                             key={item.keyword}

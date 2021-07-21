@@ -1,5 +1,5 @@
 # Feel-the-Tweet
-<em>Feel the Tweet</em> is our app idea for the EngHack 2021 Hackathon Submission.
+<em>Feel the Tweet</em> is a web app that lets users track the overall sentiment scores of selected keywords that are used on Twitter.
 
 # Authors
 1. Jonathan Li

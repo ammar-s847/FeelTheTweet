@@ -1,4 +1,4 @@
-# Feel-the-Tweet
+# Feel The Tweet
 <em>Feel the Tweet</em> is a web app that lets users track the overall sentiment scores of selected keywords that are used on Twitter.
 
 # Authors
